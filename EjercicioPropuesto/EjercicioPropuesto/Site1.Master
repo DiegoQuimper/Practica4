@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="EjercicioPropuesto.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Electrodomesticos</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css"  />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            height: 176px;
+        }
+        .nuevoEstilo1 {
+            vertical-align: top;
+            background-color: #C0C0C0;
+            width: 200px;
+            height: 300px;
+        }
+        .nuevoEstilo2 {
+            vertical-align: top;
+            background-color: #999999;
+            width: 45px;
+            height: 45px;
+            border-bottom-style: solid;
+            border-bottom-width: thick;
+            border-bottom-color: #336600;
+        }
+        .nuevoEstilo3 {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            font-size: x-large;
+            font-weight: bolder;
+            font-style: normal;
+            color: #000000;
+            text-decoration: underline;
+            background-color: #99CCFF;
+            text-align: center;
+        }
+        .nuevoEstilo4 {
+            font-family: "Eras Bold ITC";
+            font-size: 15px;
+            background-color: #86B7FE;
+            text-align: left;
+        }
+        .nuevoEstilo5 {
+            font-family: "Bahnschrift SemiBold";
+            font-size: 15px;
+            text-align: left;
+            background-color: #BADCE3;
+        }
+        .nuevoEstilo6 {
+            font-family: "Arial Rounded MT Bold";
+            font-size: 8px;
+            font-style: inherit;
+            font-variant: normal;
+            text-transform: uppercase;
+            text-align: left;
+            background-color: #99CCFF;
+        }
+        .auto-style4 {
+            font-family: "Arial Rounded MT Bold";
+            font-size: 8px;
+            font-style: inherit;
+            font-variant: normal;
+            text-transform: uppercase;
+            text-align: left;
+            background-color: #99CCFF;
+            width: 3px;
+        }
+    </style>
+</head>
+<body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <form id="form1" runat="server">
+        <div>
+            <table class="w-100">
+                <tr>
+                    <td colspan="2" class="nuevoEstilo3">ELECTRODOMÉSTICOS </td>
+                   
+                </tr>
+                <tr>    
+                    <td class="auto-style4">MENU:<br />
+                        REFRIGERADORAS<br />
+                        ARROCERAS<br />
+                        LICUADORAS<br />
+                        FREIDORAS<br />
+                        EXPRIMIDORES<br />
+                        LAVADORAS<br />
+                        BATIDORAS<br />
+                        HORNOS<br />
+                        TOSTADORES<br />
+                        WAFLERAS<br />
+                        MAQUINAS DE HELADO<br />
+                        PROCESADORES DE ALIMENTOS</td>
+                    <td class="auto-style3">&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                           
+                       </asp:ContentPlaceHolder>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">Copyright © 2020 The Soft Inc. </td>
+                </tr>
+            </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
